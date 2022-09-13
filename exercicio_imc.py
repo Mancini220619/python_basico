@@ -18,6 +18,6 @@ ano = int(2022)
 datanasc = x - idade
 imc = peso / altura **2
 
-print ('Meu nome é {n}, minha idade é {i}, altura {a} e meu peso {p}'.format(n=nome,i=idade,a=altura,p=peso))
-print ('Nascido no ano de {}'.format (datanasc))
-print ('Meu imc é {:.2f}'.format(imc))
+print ('Meu nome é {n}, minha idade é {i}, altura {a} e meu peso {p}.'.format(n=nome,i=idade,a=altura,p=peso))
+print ('Nascido no ano de {}.'.format (datanasc))
+print ('Meu imc é {:.2f}.'.format(imc))
