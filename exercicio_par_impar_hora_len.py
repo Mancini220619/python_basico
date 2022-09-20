@@ -1,5 +1,6 @@
 ###############################primeiro exercicio
 
+
 num1 = input('digite um numero: ')
 
 if num1.isdigit():
@@ -34,27 +35,32 @@ def is_int(val):
 def is_number(val):
     return is_int(val) or is_float(val)
 
-hora = input ('digite a hora: ')
+hora = input ('digite a hora entre 0-23: ')
 
 if is_int (hora):
     a = int(hora)
-    if a >= 0 and a <= 11:
-        print ('bom dia')
-    elif a >= 12 and a <= 17:
-        print ('boa tarde')
+    if a >=0 and a <=23:
+        if a <= 11:
+            print ('bom dia')
+        elif a <= 17:
+            print ('boa tarde')
+        else:
+            print ('boa noite')
     else:
-        print ('boa noite')
+        print ('digite um horario valido')
 else:
     print('digite um numero inteiro')
 
 ###############################terceiro exercicio
+
+
 
 nome = input ('digite seu nome: ')
 qtd = len (nome)
 
 if qtd <= 4:
     print ('seu nome é curto')
-elif qtd >=5 and qtd <= 6:
+elif qtd <= 6:
     print('nome é normal')
 else:
     print ('seu nome é longo')
