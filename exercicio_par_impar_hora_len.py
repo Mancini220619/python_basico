@@ -1,13 +1,17 @@
-''''
-num1 = int (input('digite um numero: '))
 
-num = num1 % 2
-print(num)   #se resto da divisao for 0 é par
+num1 = input('digite um numero: ')
 
-if (num1 % 2) == 0:
-    print('numero par')
+if num1.isdigit():
+    num1= int (num1)
+    num = num1 % 2
+    print(f'resto da divisão é {num}')   #se resto da divisao for 0 é par
+
+    if (num1 % 2) == 0:
+        print(f'{num1} é um numero par')
+    else:
+        print(f'{num1} é um numero impar')
 else:
-    print('numero impar')
+    print ('error')
 '''
 import re
  
@@ -37,8 +41,8 @@ if is_int (hora):
     else:
         print ('boa noite')
 else:
-    print('digite um horario')
-
+    print('digite um numero inteiro')
+'''
 '''
 nome = input ('digite seu nome: ')
 qtd = len (nome)
