@@ -1,3 +1,4 @@
+###############################primeiro exercicio
 
 num1 = input('digite um numero: ')
 
@@ -12,7 +13,10 @@ if num1.isdigit():
         print(f'{num1} é um numero impar')
 else:
     print ('error')
-'''
+
+
+
+###############################segundo exercicio
 import re
  
 def is_float(val):
@@ -42,8 +46,9 @@ if is_int (hora):
         print ('boa noite')
 else:
     print('digite um numero inteiro')
-'''
-'''
+
+###############################terceiro exercicio
+
 nome = input ('digite seu nome: ')
 qtd = len (nome)
 
@@ -53,4 +58,3 @@ elif qtd >=5 and qtd <= 6:
     print('nome é normal')
 else:
     print ('seu nome é longo')
-'''
